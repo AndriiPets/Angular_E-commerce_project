@@ -1,0 +1,33 @@
+
+
+.cart-table {
+    width: 100%;
+
+}
+
+.cart-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-image {
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 20rem;
+    display: block;
+}
+
+.product-total {
+    display: block;
+    font-weight: 700;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}

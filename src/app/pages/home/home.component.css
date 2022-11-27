@@ -1,0 +1,13 @@
+
+mat-drawer-container {
+    min-height: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.drawer {
+    padding: 1.5rem;
+}
