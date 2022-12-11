@@ -30,10 +30,26 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataSource = this.cart.items
+    this.cartService.cart.subscribe((_cart) => {
+      this.cart = _cart ;
+      this.dataSource = this.cart.items
+    })
   }
 
   getTotal(items: Array<CartItem>): number {
     return this.cartService.getTotal(items)
+  }
+
+  onClearCart(): void {
+    this.cartService.clearCart()
+  }
+
+  onClearRow(row: CartItem):void {
+    this.cartService.clearRow(row);
+  }
+
+  onCangeQuantityItem(item: CartItem, operation:string): void {
+    this.cartService.addItem(item, operation)
   }
 
 }
